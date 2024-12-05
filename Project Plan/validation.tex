@@ -1,0 +1,40 @@
+\section{Validation}
+
+\subsection{RQ1: Comparative Toxicity Analysis of LLMs}
+
+\begin{itemize}
+    \item \textbf{MUST: Quantitative Validation}
+    This must is completed when all the outputs, given the prompts of the dataset [...], of the three LLMs are compared and the consistency of their outputs is scored.
+
+    \item\textbf{SHOULD: }
+    This should is completed when there is a list of words that lead to a higher toxicity score. And when we can explain what kind of words these are. 
+    
+    \item \textbf{COULD: Qualitative Validation}
+    This could is completed when the findings on why the outputs are given a high toxicity score are represented in a guideline. This guideline enables humans to (partly) prevent toxic outputs or helps lower the toxicity of outputs by showing what causes toxicity in the input.
+\end{itemize}
+
+\subsection{RQ2: Lexical Analysis of Toxic Inputs}
+
+\begin{itemize}
+    \item \textbf{MUST: Toxic Output Subset}
+    If a threshold for the toxicity scores of the outputs is established this must is completed. Since there will be a trade-off between the size of the usable dataset and the height of the toxicity score, a graph will be used to identify the preferred threshold.
+    
+    \item \textbf{MUST: Attribution Explanation}
+    This must is completed if it is possible to visually show which inputs contribute most to generating toxic outputs.
+    
+    \item \textbf{MUST: Lexical Analysis}
+    This is completed if there is a lexical understanding of the tokens that lead to toxicity. Is it mainly foul language, is it a sensitive subject, etc. 
+
+    \item \textbf{COULD: Human Evaluation Protocol}
+    This is completed if there are relevant findings that are added to the previously defined guideline. It may be possible that there are no relevant findings that can be added.
+\end{itemize}
+
+\subsection{RQ3: Syntactic Analysis of Toxic Inputs}
+
+\begin{itemize}
+    \item \textbf{SHOULD: Syntactic Analysis}
+    This should is completed when parsing methods are used to analyse the structure of toxic inputs and an accuracy is scored.
+    
+    \item \textbf{SHOULD: Integration with Lexical Analysis}
+    This should is completed when the syntactic and lexical findings are combined and represented in a guideline.
+\end{itemize}

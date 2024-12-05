@@ -1,0 +1,37 @@
+\section{Requirements}
+
+\subsection{Comparing Toxicity Across LLMs}
+RQ1: \textit{How prone are Mixtral 8x7B, llama3, Gemma, and BLOOM to generate toxic outputs when prompted?}
+\begin{itemize}
+    \item \textbf{MUST:} Compare the outputs of Mixtral 8x7B, llama3, Gemma, and BLOOM by testing their toxicity given the same prompts. Use a clear model to calculate the toxicity scores for comparison.
+    
+    \item \textbf{SHOULD:} Review the toxic output to understand why they are toxic. Study what kind of words lead to a higher toxicity score.
+    
+    \item \textbf{COULD:} Create a guideline for humans to decide when an output can be considered toxic.
+\end{itemize}
+
+\subsection{Lexical Analysis on Toxic Inputs}
+RQ2: \textit{What are lexical features of prompts that lead  Mixtral 8x7B, llama3, Gemma, and BLOOM to generate toxic outputs?}
+\begin{itemize}
+    \item \textbf{MUST:} Identify toxic outputs by setting a toxicity score threshold and filtering the model outputs accordingly.
+    
+    \item \textbf{MUST:} Explain why the outputs are toxic by using tools that highlight which parts of the input caused the toxic result. Visualise these explanations with tools like Captum.
+    
+    \item \textbf{MUST:} Analyse the specific words or tokens in the input that contributed to toxicity. Focus on their meaning and lexical features.
+    
+    \item \textbf{COULD:} Design a clear process for humans to evaluate whether certain prompts are likely to lead to toxic outputs.
+\end{itemize}
+
+\subsection{Syntactical Analysis on Toxic Inputs}
+RQ3: \textit{Which syntactic structures of prompts lead the three selected LLMs to generate toxic outputs?}
+\begin{itemize}
+    \item \textbf{COULD:} Study the sentence structure of the inputs that caused toxic outputs. Use tools like dependency parsing and constituent parsing to analyse how words relate to each other.
+    
+    \item \textbf{COULD:} Combine findings from this syntactical analysis with the lexical analysis of RQ2 to obtain a final evaluation process for humans, formulated in RQ2.
+\end{itemize}
+
+\subsection{Wont's}
+\begin{itemize}
+    \item Design a formula/tool to detect toxicity.
+    \item Create an application to predict the likelihood that toxic content is generated, given a prompt.
+\end{itemize}
