@@ -1,7 +1,7 @@
 import torch
 from transformers import BloomTokenizerFast, BloomForCausalLM
 
-def generate_text_with_bloom(prompt: str, max_new_tokens: int = 50) -> str:
+def get_BLOOM(prompt: str, max_new_tokens: int = 50) -> str:
     """
     Generates text using the BLOOM model, completing the given prompt.
     """
