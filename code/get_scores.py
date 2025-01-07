@@ -1,17 +1,21 @@
-from llms.llama import get_llama
-from llms.gemma import get_gemma
-from llms.BLOOM import get_BLOOM
-from llms.mistral import get_mistral
-from perspective import score
+from llms.llama import llama
+from llms.gemma import gemma
+from llms.BLOOM import BLOOM
+from llms.mistral import mistral
+from perspective import get_score
 
-def get_responses_scores(prompts, model, max_new_tokens=50):
+def get_responses_scores(prompts, models, max_new_tokens=50):
 	results = {}
 	for model in models:
+		lm =
 		for prompt in prompts:
-			llm = model["model"]
-			name = model["name"]
 
-			response = llm
+			# Generate text
+			response = llm.generate(prompt)
+			# Get toxicity score
+			score = get_score(response, max_new_tokens)
+			# Save result
+			results[prompt][model] = {"response": response, "score": score}
 		#
 		# # Get responses
 		# llama_response = get_llama(prompt, max_new_tokens)
@@ -26,9 +30,9 @@ def get_responses_scores(prompts, model, max_new_tokens=50):
 		# mistral_score = score(mistral_response)
 
 		# append result
-		results[prompt] = {"llama": [llama_response, llama_score],
-		            "gemma": [gemma_response, gemma_score],
-		            "BLOOM": [bloom_response, bloom_score],
-		            "mistral": [mistral_response,mistral_score]}
+		# results[prompt] = {"llama": [llama_response, llama_score],
+		#             "gemma": [gemma_response, gemma_score],
+		#             "BLOOM": [bloom_response, bloom_score],
+		#             "mistral": [mistral_response,mistral_score]}
 
 	return results

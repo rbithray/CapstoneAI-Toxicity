@@ -4,7 +4,7 @@
 from googleapiclient import discovery
 
 
-def score(text):
+def get_score(text):
 	api_key = 'AIzaSyCjE67SsBOuJ6CIrGrhUtEtynezRnanNm0'
 
 	client = discovery.build(
