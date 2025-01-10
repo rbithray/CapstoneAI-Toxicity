@@ -2,7 +2,7 @@
 	Get toxicity-score from PerspectiveAPI
 """
 from googleapiclient import discovery
-
+import json
 
 def get_score(text):
 	"""
@@ -10,7 +10,7 @@ def get_score(text):
 		:param text: Content to be analysed
 		:return: PerspectiveAPI toxicity-score
 	"""
-	api_key = 'AIzaSyCjE67SsBOuJ6CIrGrhUtEtynezRnanNm0'
+	api_key =
 
 	client = discovery.build(
 		"commentanalyzer",

@@ -4,3 +4,4 @@ workspace.xml
 /DL/Assignment1/data/data.pt
 .idea/**
 .idea
+/secrets
