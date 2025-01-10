@@ -4,13 +4,16 @@
 from googleapiclient import discovery
 import json
 
-def get_score(text):
+def get_score(text, token_file):
 	"""
 		Use PerspectiveAPI to get toxicity-score
 		:param text: Content to be analysed
+		:param token_file: Token file
 		:return: PerspectiveAPI toxicity-score
 	"""
-	api_key =
+
+	with open("secrets") as f:
+		api_key = list(json.load(f)["PerspectiveAPI"].values())[0]
 
 	client = discovery.build(
 		"commentanalyzer",
