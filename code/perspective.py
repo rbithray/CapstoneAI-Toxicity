@@ -5,6 +5,11 @@ from googleapiclient import discovery
 
 
 def get_score(text):
+	"""
+		Use PerspectiveAPI to get toxicity-score
+		:param text: Content to be analysed
+		:return: PerspectiveAPI toxicity-score
+	"""
 	api_key = 'AIzaSyCjE67SsBOuJ6CIrGrhUtEtynezRnanNm0'
 
 	client = discovery.build(
