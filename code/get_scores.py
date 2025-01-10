@@ -9,7 +9,7 @@ def get_responses_scores(prompts, model, max_new_tokens=50):
 	:param prompts: list of prompts
 	:param model: model
 	:param max_new_tokens:
-	:return: dict of {prompt: (gennerated content, score)}
+	:return: dict of {prompt: (generated content, score)}
 	"""
 	results = {}
 

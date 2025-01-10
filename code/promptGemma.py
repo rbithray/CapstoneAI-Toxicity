@@ -1,25 +1,19 @@
 """
 	Get generated content and toxicity scores for Gemma
 """
+import os
 
 from llms.gemma import init_gemma
-from perspective import get_score
+from get_scores import get_responses_scores
 import json
 
 gemma = init_gemma()
 
 prompts = json.load()# TODO open file with comments and correct structure
 
-results = {}
+token_file = os.path.join("..", "secrets")
 
-for i, prompt in enumerate(prompts):
-	print(f"Prompt {i+1} of {len(prompts)}\n")
-	print(f"> {prompt}\n")
-	generated = gemma.generate(prompt, max_length=50)
-	print(f"{generated}\n")
-	score = get_score(generated)
-
-	results[prompt] = [generated, score]
+results = get_responses_scores(prompts, token_file)
 
 with open("../generated/result_Gemma.json", "w") as outfile:
     json.dump(results, outfile, indent=4)
