@@ -1,9 +1,8 @@
 import os
-os.environ["KERAS_BACKEND"] = "torch"  # Or "tensorflow" or "jax"!
-import torch
+os.environ["KERAS_BACKEND"] = "tensorflow"  # "torch", "tensorflow", or "jax"!
+#import torch
 import keras
 import keras_hub
-import numpy as np
 
 def init_gemma():
 	"""
