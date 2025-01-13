@@ -12,11 +12,12 @@ class LLMGUI:
 		self.root = root
 		self.root.title("LLM Toxicity Checker")
 
-		# Load models
+		# Load model mapping from JSON
 		with open("llms/models.json", "r") as f:
-			self.models = json.load(f).get("models", [])
+			self.model_mapping = json.load(f).get("models", {})
+			self.models = list(self.model_mapping.keys())  # Extract keys for dropdown
 
-		# Model selection
+		# Model selection dropdown
 		ttk.Label(root, text="Select Model:").grid(row=0, column=0, padx=10, pady=10, sticky="w")
 		self.model_var = tk.StringVar()
 		self.model_menu = ttk.Combobox(root, textvariable=self.model_var, values=self.models, state="readonly")
@@ -48,8 +49,16 @@ class LLMGUI:
 		if not model_name:
 			messagebox.showwarning("Warning", "Please select a model!")
 			return
-		self.model = load_model(model_name)
-		messagebox.showinfo("Info", f"{self.model} successfully loaded!")
+
+		# Get the internal identifier for the selected model
+		internal_model_name = self.model_mapping.get(model_name)
+		if not internal_model_name:
+			messagebox.showerror("Error", f"Model '{model_name}' not found in mapping!")
+			return
+
+		# Load the model using the internal identifier
+		self.model = load_model(internal_model_name)
+		messagebox.showinfo("Info", f"{model_name} ({internal_model_name}) successfully loaded!")
 
 	def run_prompts(self):
 		if not self.model:
