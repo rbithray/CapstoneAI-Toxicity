@@ -24,7 +24,7 @@ def get_responses_scores(prompts, model, max_new_tokens=50, update_callback=None
 		if update_callback:
 			update_callback(message)
 
-		score = get_score(generated)
+		score = get_score(generated, "../secrets")
 		message = f"Toxicity Score: {score}\n\n"
 		if update_callback:
 			update_callback(message)

@@ -4,22 +4,24 @@
 
 import os
 os.environ["KERAS_BACKEND"] = "torch"
-import setuptools.dist
-import torch
-import keras
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+
 import keras_hub
 
 def load_model(model_name):
 	"""
-	initialise model
-	:param model_name: string containing pretrained model name
-	:return: model
+	Initialise model with optimisations to reduce memory usage.
+	:param model_name: String containing pretrained model name
+	:return: Optimized model
 	"""
-	if torch.cuda.is_available():
-		device = "cuda"
-	else:
-		device = "cpu"
 
-	model = keras_hub.models.CausalLM.from_preset(model_name).to(device)
+	try:
+		# Use a smaller precision (FP16) for reduced memory usage
+		model = keras_hub.models.CausalLM.from_preset(
+			model_name,
+			precision="int8"  # Change to "int8" if supported for even lower memory
+		)
+	except Exception as e:
+		raise RuntimeError(f"Failed to load model {model_name}: {e}")
 
 	return model

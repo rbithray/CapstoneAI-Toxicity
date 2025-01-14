@@ -12,7 +12,7 @@ def get_score(text, token_file):
 		:return: PerspectiveAPI toxicity-score
 	"""
 
-	with open("secrets") as f:
+	with open(token_file) as f:
 		api_key = list(json.load(f)["PerspectiveAPI"].values())[0]
 
 	client = discovery.build(
