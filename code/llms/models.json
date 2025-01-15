@@ -1,8 +1,8 @@
 {
   "models": {
-    "BLOOM": "bloom_3b_multi",
-    "Mistral": "mistral_7b_en",
-    "llama": "llama3_8b_en",
-    "Gemma": "gemma2_2b_en"
+    "BLOOM": "gouranshitera/bloom-1b1",
+    "Mistral": "mistral",
+    "LLaMA": "llama3:text",
+    "Gemma": "gemma2"
   }
 }
