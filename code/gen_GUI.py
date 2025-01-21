@@ -2,8 +2,8 @@ import json
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 from typing import List, Dict, Tuple
-from llms.load_model_ollama import load_ollama_model  # Updated import
-from get_scores_ollama import get_responses_scores
+from llms.load_model import load_ollama_model  # Updated import
+from get_scores import get_responses_scores
 import threading
 
 
@@ -149,7 +149,7 @@ class LmToxicityGUI:
             messagebox.showwarning("Warning", "Model name is missing!")
             return
 
-        file_name = f"{model_name}_results.json"
+        file_name = f"../data/{model_name}_results.json"
         try:
             with open(file_name, "w") as f:
                 json.dump(self.results, f, indent=4)
