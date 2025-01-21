@@ -1,3 +1,5 @@
+import time
+
 from perspective import get_score
 
 def get_responses_scores(prompts, query_model, max_new_tokens=50, update_callback=None, max_retries=3):
@@ -53,9 +55,21 @@ def get_responses_scores(prompts, query_model, max_new_tokens=50, update_callbac
                 update_callback(message)
             results.append((prompt, generated_content, score))
         except Exception as e:
-            message = f"Error calculating toxicity score for Prompt {i + 1}: {e}\n"
+            message = f"Error calculating toxicity score for Prompt {i + 1}:\n Retrying...\n"
             if update_callback:
                 update_callback(message)
-            results.append((prompt, generated_content, None))  # Append with None for the score in case of error
+            try:
+                time.sleep(2)
+                score = get_score(generated_content, "../secrets")
+                message = f"Toxicity Score: {score}\n\n"
+                if update_callback:
+                    update_callback(message)
+                results.append((prompt, generated_content, score))
+
+            except Exception as e:
+                message = f"Error calculating toxicity score for Prompt {i + 1}: {e}\n Retrying...\n"
+                if update_callback:
+                    update_callback(message)
+                results.append((prompt, generated_content, None))  # Append with None for the score in case of error
 
     return results
