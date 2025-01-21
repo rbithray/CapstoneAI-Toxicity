@@ -4,7 +4,7 @@
 import os
 
 from llms.gemma import init_gemma
-from get_scores import get_responses_scores
+from get_scores_keras import get_responses_scores
 import json
 
 gemma = init_gemma()
