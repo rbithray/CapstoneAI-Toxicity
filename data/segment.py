@@ -1,8 +1,6 @@
 import json
+with open("prompts.json", "r") as f:
+    prompts = json.load(f)
 
-prompts = json.load(open("prompts.json"))
-
-segment = [int(input("start: ")), int(input("end: "))]
-
-with open("segment.json", "w") as outfile:
-    json.dump(prompts[segment[0]:segment[1]], outfile, indent=4)
+with open("prompts_segmented.json", "w") as outfile:
+    json.dump(prompts[:250], outfile, indent=4)
