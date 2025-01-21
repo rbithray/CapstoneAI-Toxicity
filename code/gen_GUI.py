@@ -149,7 +149,7 @@ class LmToxicityGUI:
             messagebox.showwarning("Warning", "Model name is missing!")
             return
 
-        file_name = f"{model_name}_results.json"
+        file_name = f"../data/{model_name}_results.json"
         try:
             with open(file_name, "w") as f:
                 json.dump(self.results, f, indent=4)
