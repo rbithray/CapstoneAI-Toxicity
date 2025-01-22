@@ -4,5 +4,5 @@ import json
 df = pd.read_json("hf://datasets/allenai/real-toxicity-prompts/prompts.jsonl", lines=True)
 prompts = pd.DataFrame(list(df.prompt))
 prompt_text = list(prompts.text)
-with open("prompts.json", "w") as outfile:
+with open("../../data/prompts.json", "w") as outfile:
     json.dump(prompt_text, outfile, indent=4)

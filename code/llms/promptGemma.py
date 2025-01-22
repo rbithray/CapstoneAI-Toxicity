@@ -4,14 +4,14 @@
 import os
 
 from llms.gemma import init_gemma
-from get_scores_keras import get_responses_scores
+from code.scoring.get_scores_keras import get_responses_scores
 import json
 
 gemma = init_gemma()
 
 prompts = json.load()# TODO open file with comments and correct structure
 
-token_file = os.path.join("..", "secrets")
+token_file = os.path.join("../..", "secrets")
 
 results = get_responses_scores(prompts, token_file)
 

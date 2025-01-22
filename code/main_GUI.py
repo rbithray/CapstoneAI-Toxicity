@@ -1,9 +1,8 @@
 import json
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
-from typing import List, Dict, Tuple
 from llms.load_model import load_ollama_model  # Updated import
-from get_scores import get_responses_scores
+from scoring.get_scores import get_responses_scores
 import threading
 
 
