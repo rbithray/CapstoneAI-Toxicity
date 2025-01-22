@@ -1,20 +1,16 @@
 import pandas as pd
 
-prompts = pd.read_json("../../data/random/1000random.json", lines=True)
+base_path = "../../data/toxic/"
 
-bloom = pd.read_json("../../data/random/BLOOM_results.json", lines=True)
-gemma = pd.read_json("../../data/random/Gemma_results.json", lines=True)
-llama = pd.read_json("../../data/random/LLaMA_results.json", lines=True)
-mistral = pd.read_json("../../data/random/Mistral_results.json", lines=True)
+scores = pd.DataFrame(pd.read_json(f"{base_path}500toxic.json").reset_index().toxicity)
 
-scores = prompts.toxicity
-bloom_scores = bloom[2]
-gemma_scores = gemma[2]
-llama_scores = llama[2]
-mistral_scores = mistral[2]
+bloom = pd.read_json(f"{base_path}BLOOM_results.json")[2]
+gemma = pd.read_json(f"{base_path}Gemma_results.json")[2]
+llama = pd.read_json(f"{base_path}LLaMA_results.json")[2]
+mistral = pd.read_json(f"{base_path}Mistral_results.json")[2]
 
-scores["BLOOM"] = bloom_scores
-scores["Gemma"] = gemma_scores
-scores["LLaMA"] = llama_scores
-scores["Mistral"] = mistral_scores
-scores.to_json("../../data/random/1000random_scores.json", orient="records", indent=4)
+scores["BLOOM"] = bloom
+scores["Gemma"] = gemma
+scores["LLaMA"] = llama
+scores["Mistral"] = mistral
+scores.to_json(f"{base_path}500toxic_scores.json", orient="records", indent=4)

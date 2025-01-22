@@ -97,10 +97,3 @@ The model is evaluated using a separate validation set. Key metrics include:
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure that your code adheres to the project's coding standards and includes appropriate tests.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-*Note: This README is generated based on the typical structure of a machine learning project for toxicity detection. Please customize it to align with the specific details and structure of your project.* 
