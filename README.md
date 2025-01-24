@@ -18,7 +18,8 @@ LLMs fail and the underlying mechanisms driving these failures.
 - [Dataset](#dataset)
 - [Tools](#tools)
 - [Ethics](docs/Ethical_Reflection_Capstone.pdf)
-- [Discussion](docs/ack.md)
+- [Conclusion](docs/conclusion.md)
+- [Discussion](docs/discussion)
 - [References](#references)
 - [File structure](#file-structure)
 
@@ -49,7 +50,7 @@ This projects aims to answer the following research questions:
 3. Which syntactic structures of prompts lead the three selected LLMs to generate toxic outputs?
 
 The approach and results for the research question can be found here: [RQ1](docs/RQ1.md), [RQ2](docs/RQ2.md). For RQ3,
-more information can be found in [Discussion](docs/ack.md)
+more information can be found in [Discussion](docs/discussion)
 
 ## Dataset
 
@@ -64,7 +65,20 @@ This project uses `python 3.12` for [RQ1](docs/RQ1.md), and `python 3.10` for [R
 the specific libraries used are listed in [code](code/code.md).
 
 ## Ethical Reflection
-As the project concerns toxicity in the in- and outputs of LLMs ethical consideration is a necessity. We reflected on ethical implications of our product and potential implications if research on this topic is expanded. We believe that the most important ethics of our product is discussed, however, we encourage a constant ethical reflection during future research. The ethical reflection of the project and its process can be found here [add link]. 
+
+As the project concerns toxicity in the in- and outputs of LLMs ethical consideration is a necessity. We reflected on
+ethical implications of our product and potential implications if research on this topic is expanded. We believe that
+the most important ethics of our product is discussed, however, we encourage a constant ethical reflection during future
+research. The ethical reflection of the project and its process can be found here [add link](
+docs/Ethical_Reflection_Capstone_.
+
+## Conclusion
+
+The conclusion for this project can be found [here](docs/conclusion.md)
+
+## Discussion
+
+The discussion can be found [here](docs/discussion).
 
 ---
 ## References
