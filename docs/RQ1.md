@@ -31,6 +31,7 @@ To review the toxic outputs, we used the five files created in the first step of
 \* Percentage of 50 toxic generations from random prompts.
 
 When using the Perspective API to evaluate the toxicity of text, the toxicity score is assigned on a scale from 0 to 1. A score of 0 indicates that a comment is non-toxic, while a score of 1 indicates that the comment is highly toxic. We chose the threshold for labeling a sentence as "toxic" to be 0.5 or higher, meaning that 50% of readers would perceive the comment as toxic.
+While the top 50 toxic outputs formed the focus of our deeper analysis, examining all 500 generated outputs reveals a general toxicity rate of about 4%. 
 
 ### Bias in Scoring
 
