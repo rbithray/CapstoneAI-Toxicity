@@ -1,7 +1,7 @@
 """
 
 """
-from perspective import get_score
+from scoring.perspective import get_score
 
 def get_responses_scores(prompts, model, max_new_tokens=50, update_callback=None):
 	"""

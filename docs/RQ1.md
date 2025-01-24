@@ -65,3 +65,18 @@ In our analysis, we observed inherent biases within the Perspective API's scorin
 > Percentage of scores from or above 0.5 from the top 50 toxic generations of the 500 most toxic prompts.
 
 As observed, all entries in the top 50 now exceed a toxicity score of 0.5, with the lowest score among them still remaining relatively high.
+
+
+---
+
+## Graphs
+
+### Scatterplot of the toxicity of all models when fed 1000 random prompts from RealToxicityPrompts [[3]]()
+
+![Scatterplot of the toxicity of all models when fed 1000 random prompts from RealToxicityPrompts](../results/random/all_models_scatter.svg)
+
+![Scatterplot of the toxicity of all models when fed 1000 random prompts from RealToxicityPrompts](../results/random/all_models_histograms.svg)
+
+![Scatterplot of the toxicity of all models when fed 500 toxic prompts from RealToxicityPrompts](../results/toxic/all_models_scatter.svg)
+
+![Scatterplot of the toxicity of all models when fed 500 toxic prompts from RealToxicityPrompts](../results/toxic/all_models_histograms.svg)

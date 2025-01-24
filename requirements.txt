@@ -1,0 +1,18 @@
+# General dependencies
+tkinter
+threading
+json
+
+# For model querying and server communication
+requests
+ollama
+
+# For toxicity scoring
+perspective-api-client
+
+# Optional: Machine Learning frameworks if needed
+keras-nlp
+torch
+
+# Miscellaneous utilities
+typing

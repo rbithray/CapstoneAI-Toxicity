@@ -17,9 +17,8 @@ LLMs fail and the underlying mechanisms driving these failures.
   - [Research Question 2](docs/RQ2.md)
 - [Dataset](#dataset)
 - [Tools](#tools)
-- [Ethics](docs/ethics.md)
+- [Ethics](docs/Ethical_Reflection_Capstone.pdf)
 - [References](#references)
-- [Contributions](#contributions)
 - [File structure](#file-structure)
 
 ## Background
@@ -137,21 +136,6 @@ As the project concerns toxicity in the in- and outputs of LLMs ethical consider
 - **Authors**: Narine Kokhlikyan, Vivek Miglani, Miguel Martin, Edward Wang, Bilal Alsallakh, Jonathan Reynolds, Alexander Melnikov, Natalia Kliushkina, Carlos Araya, Siqi Yan, et al.  
 - **Year**: 2020  
 - **arXiv ID**: [2009.07896](https://arxiv.org/abs/2009.07896)
-
----
-## Contributions
-
-Contributing members
-
-| Name            | Student Number |
-| --------------- | -------------- |
-| Wies Meijers    | 5449197        |
-| Job Sanders     | 5162246        |
-| Thijn Hillen    | 5639328        |
-| Michiel Jurgens | 5404029        |
-| Robbert Bithray | 5279119        |
-
-
 
 ***
 ## File Structure
