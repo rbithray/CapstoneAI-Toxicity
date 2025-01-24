@@ -1,4 +1,4 @@
-# CapstoneAI-Toxicity
+# Characterising Toxicity in Language Models
 
 > [!Warning]
 > Due to the nature of this project, this repo contains toxic and potentially offensive language that may be harmful or distressing.  
