@@ -17,7 +17,7 @@ LLMs fail and the underlying mechanisms driving these failures.
   - [Research Question 2](docs/RQ2.md)
 - [Dataset](#dataset)
 - [Tools](#tools)
-- [Ethics](docs/Ethical_Reflection_Capstone.pdf)
+- [Ethics](docs/Ethics.pdf)
 - [Conclusion](docs/conclusion.md)
 - [Discussion](docs/discussion)
 - [References](#references)
@@ -69,8 +69,7 @@ the specific libraries used are listed in [code](code/code.md).
 As the project concerns toxicity in the in- and outputs of LLMs ethical consideration is a necessity. We reflected on
 ethical implications of our product and potential implications if research on this topic is expanded. We believe that
 the most important ethics of our product is discussed, however, we encourage a constant ethical reflection during future
-research. The ethical reflection of the project and its process can be found here [add link](
-docs/Ethical_Reflection_Capstone_.
+research. The ethical reflection of the project and its process can be found [here](docs/Ethics.pdf).
 
 ## Conclusion
 

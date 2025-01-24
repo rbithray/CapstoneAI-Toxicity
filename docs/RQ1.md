@@ -72,10 +72,13 @@ As observed, all entries in the top 50 now exceed a toxicity score of 0.5, with 
 
 ## Graphs
 
-### Scatterplot of the toxicity of all models when fed 1000 random prompts from RealToxicityPrompts [[3]]()
+Scatterplot of the toxicity of all models when fed 1000 random prompts from
+RealToxicityPrompts [[3]](../README.md#3-realtoxicityprompts-evaluating-neural-toxic-degeneration-in-language-models)
 
 ![Scatterplot of the toxicity of all models when fed 1000 random prompts from RealToxicityPrompts](../results/random/all_models_scatter.svg)
 
+Scatterplot of the toxicity of all models when fed 1000 random prompts from
+RealToxicityPrompts [[3]](../README.md#3-realtoxicityprompts-evaluating-neural-toxic-degeneration-in-language-models)
 ![Scatterplot of the toxicity of all models when fed 1000 random prompts from RealToxicityPrompts](../results/random/all_models_histograms.svg)
 
 ![Scatterplot of the toxicity of all models when fed 500 toxic prompts from RealToxicityPrompts](../results/toxic/all_models_scatter.svg)

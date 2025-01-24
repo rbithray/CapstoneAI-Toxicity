@@ -14,7 +14,7 @@ This GUI was initially implemented using `Tensorflow` along with `Keras-hub`. Th
 and time intensive when trying to prompt the models, taking about 2-5 minutes per prompt. After this realisation, the
 decision was made to use `Ollama` for the large inference tasks. This brought processing time down by multiple orders of
 magnitude, bringing the processing time per prompt down to 0.5-1.5 seconds per prompt. This made a large part of RQ1
-possible
+possible. The older `Keras` implementation can be found in `keras-archive`.
 
 ## Features
 
