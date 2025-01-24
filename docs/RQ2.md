@@ -1,5 +1,8 @@
 # 4. Research Question 2
 
+> [!WARNING]
+> Due to the nature of this section, the following contains toxic and possibly harmful language. For transparency and honesty purposes it has been decided not to censor these terms, but discuss them and the biases and negative connotation that leads to the generation of these texts. The group in no way aggrees with any of these statements. Viewer discretion is strongly advised.
+
 Whereas the previous chapter focused on generating the toxic outputs and comparing the toxicity scores of the models, this part dives deeper into the lexical features of the prompts and the outputs. We were able to do this using Captum, a library that can be used for model interpretability [9]. In this chapter, the following question will be answered:
 
 **What are lexical features of prompts that lead Mistral 7B, Llama3, Gemma, and BLOOM to generate toxic outputs?**
