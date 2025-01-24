@@ -36,7 +36,9 @@ Explainable AI (XAI) has long been a vital area of research, undergoing a renais
 
 
 
-## Research Questions 1
+## Research Question 1
+
+## Research Question 2
 
 This projects aims to answer the following research questions:
 
