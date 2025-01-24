@@ -1,1 +1,2 @@
-# Acknowledgements
+# Discussion 
+Throughout this project, we learned a great deal. However, while creating our project plan, we did not fully realize the extent of our unfamiliarity with certain tasks—or how much time it would take to become proficient in them. This included getting LLMs up and running, scoring their outputs, working with APIs, learning Captum, and closely reviewing the code comments to understand what was happening. Additionally, our computer limitations led to long waiting times for generating results. We underestimated the impact of these challenges, which is why we were unable to complete all the planned objectives, such as addressing the first research question and creating a handbook.
