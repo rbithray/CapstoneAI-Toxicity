@@ -72,8 +72,4 @@ Prompts with insults or strong language often led the models to add even more vu
 
 ---
 
-### Conclusion
 
-The analysis shows that large language models tend to repeat and amplify harmful biases in their outputs. Whether it’s stereotypes about groups, violent scenarios, or objectifying women, the models are heavily influenced by the biases in their training data. They also tend to escalate aggressive or ambiguous prompts into even more toxic responses.
-
-Feature Ablation helped us understand which words and phrases drive these toxic patterns by isolating the most influential tokens. This work shows that improving training data and developing better safeguards is essential to make these models safer and less biased. The same problems showed up across all the models, highlighting the need for industry-wide improvements.
