@@ -63,8 +63,8 @@ information on what and how this data was used can be found in [data](data/data.
 This project uses `python 3.12` for [RQ1](docs/RQ1.md), and `python 3.10` for [RQ2](docs/RQ2.md). More information on
 the specific libraries used are listed in [code](code/code.md).
 
-## Ethics
-
+## Ethical Reflection
+As the project concerns toxicity in the in- and outputs of LLMs ethical consideration is a necessity. We reflected on ethical implications of our product and potential implications if research on this topic is expanded. We believe that the most important ethics of our product is discussed, however, we encourage a constant ethical reflection during future research. The ethical reflection of the project and its process can be found here [add link]. 
 
 ---
 ## References
