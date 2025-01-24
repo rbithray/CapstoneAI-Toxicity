@@ -1,6 +1,6 @@
 # Research Question 1
 
-After preprocessing the data, the first step is to generate toxic outputs. We were able to use LLaMA3:text, Gemma2, and BLOOM3b. Instead of Mistral 7b, we used MistralAI's Mistral 7b because Mixtral was too large to run on our computers, and Mistral 7b is significantly smaller. The other models were quantized before running them. 
+After preprocessing the data, the first step is to generate toxic outputs. We were able to use LLaMA3:text, Gemma2, and BLOOM3b. Instead of Mistral 7b, we used Mistral 7b because Mixtral was too large to run on our computers, and Mistral 7b is significantly smaller. The other models were quantized before running them. 
 
 In this chapter, the following question will be answered:
 
