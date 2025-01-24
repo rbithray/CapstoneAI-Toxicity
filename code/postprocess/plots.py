@@ -31,7 +31,7 @@ for ax, model in zip(axes.flatten(), models):
     ax.grid(True)
 
 plt.tight_layout(rect=[0, 0, 1, 0.96])
-plt.savefig("../../figures/toxic/all_models_scatter.svg", format="svg")
+plt.savefig("../../results/toxic/all_models_scatter.svg", format="svg")
 
 # Generate histogram plots for all models' response toxicity in subplots
 fig, axes = plt.subplots(2, 2, figsize=(12, 10))
@@ -45,7 +45,7 @@ for ax, model in zip(axes.flatten(), models):
     ax.grid(True)
 
 plt.tight_layout(rect=[0, 0, 1, 0.96])
-plt.savefig("../../figures/toxic/all_models_histograms.svg", format="svg")
+plt.savefig("../../results/toxic/all_models_histograms.svg", format="svg")
 
 plt.show()
 
