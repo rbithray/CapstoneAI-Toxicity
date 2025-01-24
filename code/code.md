@@ -188,6 +188,30 @@ mechanisms for empty responses.
 
 # Research Question 2 (RQ2)
 
+
+This code demonstrates the use of a large language model, for analyzing and interpreting model outputs using Captum. It is designed to run on a Kaggle environment with GPU acceleration, utilizing libraries for data processing, deep learning, and model interpretability.
+
+---
+
+## Libraries Used
+
+### **Core Libraries**
+- **`numpy`**: For numerical operations.
+- **`pandas`**: For data manipulation and processing.
+
+### **Deep Learning Frameworks**
+- **`torch` (PyTorch)**: For running and managing large language models.
+- **`torch.nn`**: For working with neural network layers.
+
+### **Hugging Face Transformers**
+- **`BloomForCausalLM`** and **`BloomTokenizerFast`**: For loading and tokenizing the Bloom-3B model.
+- **`AutoModelForCausalLM`** and **`AutoTokenizer`**: Utilities for handling other causal language models.
+- **`BitsAndBytesConfig`**: For memory-efficient quantization using the `bitsandbytes` library.
+
+### **Interpretability Library**
+- **`captum`**: A library for model interpretability, including:
+  - `FeatureAblation
+
 ***
 
 ## File Tree
