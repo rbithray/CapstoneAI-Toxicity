@@ -5,13 +5,13 @@ json
 
 # For model querying and server communication
 requests
-ollama
 
 # For toxicity scoring
-perspective-api-client
+googleapiclient
 
 # Optional: Machine Learning frameworks if needed
-keras-nlp
+tensorflow
+keras-hup
 torch
 
 # Miscellaneous utilities

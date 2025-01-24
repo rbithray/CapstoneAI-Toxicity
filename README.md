@@ -18,6 +18,7 @@ LLMs fail and the underlying mechanisms driving these failures.
 - [Dataset](#dataset)
 - [Tools](#tools)
 - [Ethics](docs/Ethical_Reflection_Capstone.pdf)
+- [Discussion](docs/ack.md)
 - [References](#references)
 - [File structure](#file-structure)
 
@@ -48,7 +49,7 @@ This projects aims to answer the following research questions:
 3. Which syntactic structures of prompts lead the three selected LLMs to generate toxic outputs?
 
 The approach and results for the research question can be found here: [RQ1](docs/RQ1.md), [RQ2](docs/RQ2.md). For RQ3,
-more information can be found in [Acknowledgements](docs/ack.md)
+more information can be found in [Discussion](docs/ack.md)
 
 ## Dataset
 
