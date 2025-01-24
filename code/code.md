@@ -188,6 +188,8 @@ mechanisms for empty responses.
 
 # Research Question 2 (RQ2)
 
+***
+
 ## File Tree
 
 ```tree
