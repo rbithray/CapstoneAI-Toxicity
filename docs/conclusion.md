@@ -42,7 +42,7 @@ _**How prone are Mistral 7B, LLaMA3, Gemma, and BLOOM to generating toxic output
 ### **Answering the Research Question**
 
 In summary, **all four models—Mistral 8x7B, LLaMA3, Gemma, and BLOOM—are capable of producing toxic outputs**. However,
-our analysis indicates that **the overall incidence of toxic responses was around 5%**. Importantly, prompts containing
+our analysis indicates that **the overall incidence of toxic responses was around 4%**. Importantly, prompts containing
 offensive or hateful language strongly influenced the resulting toxicity. These insights underscore the need for
 continued research into **prompt design**, toxicity detection, and human-in-the-loop moderation to effectively identify
 and mitigate harmful content.
