@@ -1,0 +1,25 @@
+# **Conclusion**
+
+## **Research Question 1**
+_**How prone are Mistral 8x7B, LLaMA3, Gemma, and BLOOM to generating toxic outputs when prompted?**_
+
+---
+
+### **MUST: Quantitative Validation**
+- We compared the models (Mistral 8x7B, LLaMA3, Gemma, and BLOOM) using the same set of prompts and the Perspective API for scoring.  
+- **Key Finding:** All four models demonstrated the potential to generate toxic content, though the frequency and severity varied.  
+- **Implication:** These results highlight the importance of regular improvements in model training and more robust toxicity detection methods.
+
+---
+
+### **SHOULD: Review Toxic Outputs**
+- We examined the top 50 most toxic outputs from each model, observing frequent instances of profanity, hate speech, and identity-based attacks.  
+- **Key Observation:** Automated tools like the Perspective API do not always account for contextual nuances (e.g., negation or sarcasm), potentially mislabeling or underestimating certain outputs.  
+- **Implication:** Human oversight remains essential to accurately identify and address harmful content, ensuring a fuller understanding of the social and contextual factors at play.
+
+---
+
+### **COULD: Guidelines for Humans**
+- We initially planned to create a comprehensive guideline for human evaluators and content moderators.  
+- **Limitations:** Time and scope constraints prevented us from completing this step.  
+- **Next Steps:** Developing practical strategies for preventing and reducing toxic outputs—such as identifying specific triggers and reframing prompts—could further refine moderation practices in the future.
