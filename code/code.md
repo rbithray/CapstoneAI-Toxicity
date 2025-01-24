@@ -192,6 +192,39 @@ mechanisms for empty responses.
 This code demonstrates the use of a large language model, for analyzing and interpreting model outputs using Captum. It is designed to run on a Kaggle environment with GPU acceleration, utilizing libraries for data processing, deep learning, and model interpretability.
 
 ---
+## **Code Explanation**
+
+This repository provides a workflow for generating text with large language models and analyzing its outputs using interpretability techniques from Captum.
+
+### **1. Model Setup**
+- **Loading the Model:** 
+  - The model is loaded with **4-bit quantization** using `BitsAndBytesConfig` for efficient GPU usage.
+  - The model and tokenizer are initialized in the `load_model` function.
+- **Text Generation:**
+  - The `get_BLOOM` or `get_output` function generates text from a given prompt using the model.
+  - Randomness is controlled via `temperature`, `top_k`, and `do_sample`.
+
+### **2. Interpretability Methods**
+The code employs Captum to analyze the importance of tokens in the model's output:
+- **Feature Ablation:** 
+  - Evaluates token contributions by systematically removing them.
+  - Token and sequence-level importance are visualized.
+- **Shapley Values:** 
+  - Uses Shapley value sampling, a cooperative game-theoretic method, to estimate token importance.
+- **Integrated Gradients:** 
+  - Computes gradients of the output with respect to the embeddings to assess token impact. <br>
+  
+ We eventually settled on only using **Feature Ablation** in our final project.
+
+### **3. Input Representation**
+- The `TextTokenInput` class processes text into tokenized inputs compatible with Captum’s attribution methods.
+
+### **Purpose**
+This code allows users to:
+1. Generate text using Bloom or Llama, Mistral and Gemma.
+2. Apply interpretability techniques to visualize and understand token importance.
+3. Gain insights into the model's decision-making process.
+
 
 ## Libraries Used
 
