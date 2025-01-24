@@ -12,7 +12,7 @@ In this chapter, the following question will be answered:
 
 To compare the model outputs, we created a graphical user interface (GUI) where you can select the model to create the response and add the prompts. For the prompts, we chose the 500 most toxic as an input. After selecting the model and prompts, you will get back a list of responses with the toxicity score from the Perspective API. 
 
-After collecting all responses and their scores, we selected the 50 most toxic responses from each LLM and prompt, resulting in five JSON files containing the top 50 most toxic entries for each category. 
+After collecting all responses and their scores, we selected the 50 most toxic responses from each LLM and prompt, resulting in five JSON files containing the top 50 most toxic entries for each category. These files can be accessed [here](https://github.com/yourusername/yourrepository/tree/main/json_files)
 
 ### SHOULD: Review Toxic Outputs and Analyze Word Choice
 
