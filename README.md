@@ -1,19 +1,24 @@
 # CapstoneAI-Toxicity
 
+> [!Warning]
+> Due to the nature of this project, this repo contains toxic and potentially offensive language that may be harmful or distressing.  
+
 This is a project, that functions as Capstone for the "Engineering with AI" minor programme at the TUDelft. This project aims to characterise from a linguistic viewpoint what formulations and structures might cause generative large language models to generate toxic content.
 
 ## Table of Contents
 
 - [Background](#background)
-- [Project Plan] (docs/CapstoneAI_Porject_Plan.pdf)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Dataset](#dataset)
-- [Model Training](#model-training)
-- [Evaluation](#evaluation)
-- [References](#ceferences)
+- [Project Plan](docs/CapstoneAI_Project_Plan.pdf)
+- [Research Questions](#research-questions)
+  * [RQ1](#RQ1)
+  * [RQ2](#RQ2)
+  * [RQ3](#RQ3)
+- [Tools](#tools)
+  * [Required Libraries](#required-libraries)
+  * [APIs and Tokens](#apis-and-tokens)
+- [References](#references)
 - [Contributions](#contributions)
+- [File structure](#file-structure)
 
 ## Background
 
@@ -27,80 +32,33 @@ Although defining toxic output through benchmarking is crucial for identifying f
 
 Explainable AI (XAI) has long been a vital area of research, undergoing a renaissance with works like LIME and SHAP, which provide algorithmic explanations. Despite advances in generative AI, XAI remains essential for understanding and mitigating the toxic output produced by LLM. This is particularly important because LLM outputs can often be inconsistent, overly confident, or prone to hallucinations. Given the societal impact of language toxicity, ensuring transparency in model decision making is crucial.
 
-## Features
 
-- **Data Preprocessing**: Tools for cleaning and preparing text data for model training.
-- **Model Training**: Scripts to train machine learning models on labeled datasets.
-- **Evaluation Metrics**: Functions to assess model performance using metrics like accuracy, precision, recall, and F1-score.
-- **Prediction Interface**: A simple interface to input new comments and receive toxicity predictions.
+## Research Questions
 
-## Installation
+This projects aims to answer the following research questions:
 
-To set up the project locally, follow these steps:
+1. How prone are Mistral, llama3, Gemma, and BLOOM to generate toxic outputs when prompted?
+2. What are lexical features of prompts that lead Mistral, llama3, Gemma, and BLOOM to generate toxic outputs?
+3. Which syntactic structures of prompts lead the three selected LLMs to generate toxic outputs?
 
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/rbithray/CapstoneAI-Toxicity.git
-   ```
-
-2. **Navigate to the project directory**:
-
-   ```bash
-   cd CapstoneAI-Toxicity
-   ```
-
-3. **Install the required packages**:
-
-   Ensure you have [Python 3.8](https://www.python.org/downloads/release/python-380/) installed. Then, install the dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
+***
+## Tools
+### Required Libraries
+### APIs and Tokens
 
 ## Usage
 
 After installation, you can start training the model or use a pre-trained model to make predictions.
 
-### Training the Model
 
-To train the model, run:
-
-```bash
-python train.py --data_path data/train.csv --model_output models/toxicity_model.pkl
-```
 
 ### Making Predictions
 
-To predict the toxicity of new comments:
-
-```bash
-python predict.py --model_path models/toxicity_model.pkl --input_text "Your comment here."
-```
 
 ## Dataset
 
-The project utilizes the [Jigsaw Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) dataset, which includes thousands of comments labeled for different types of toxicity.
 
-## Model Training
 
-The training process involves:
-
-1. **Data Loading**: Importing the dataset.
-2. **Data Cleaning**: Removing unnecessary characters, handling missing values, and normalizing text.
-3. **Feature Extraction**: Converting text into numerical features using techniques like TF-IDF.
-4. **Model Selection**: Choosing appropriate machine learning algorithms (e.g., Logistic Regression, Random Forest).
-5. **Training**: Fitting the model to the training data.
-6. **Saving the Model**: Storing the trained model for future use.
-
-## Evaluation
-
-The model is evaluated using a separate validation set. Key metrics include:
-
-- **Accuracy**: Proportion of correct predictions.
-- **Precision**: Proportion of true positive predictions among all positive predictions.
-- **Recall**: Proportion of true positive predictions among all actual positives.
-- **F1-Score**: Harmonic mean of precision and recall.
 
 ## References
 
@@ -127,6 +85,24 @@ Contributing members
 | Michiel Jurgens | 5404029        |
 | Robbert Bithray | 5279119        |
 
+***
+## File Structure
 
+```aiignore
+CapstoneAI-Toxicity
+├── code
+│   ├── import
+│   ├── llms
+│   ├── postprocess
+│   └── scoring
+├── data
+│   ├── random
+│   └── toxic
+├── docs
+└── figures
+    ├── distributions
+    ├── random
+    └── toxic
+```
 
 
