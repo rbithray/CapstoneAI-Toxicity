@@ -13,7 +13,7 @@ of the generated responses using Google's Perspective API.
 ## Features
 
 - **Model Selection**: Choose from a list of pre-configured models to load and query.
-- **Ollama Framework**: Uses Ollama server for easy and efficient model loading and inference
+- **Ollama Framework**: Uses Ollama serve for easy and efficient model loading and inference
 - **Prompt Management**: Load prompts from a JSON file for batch processing.
 - **Response Scoring**: Analyse the toxicity of model-generated responses using the Perspective API.
 - **Result Management**: Save results to a JSON file for later analysis.
