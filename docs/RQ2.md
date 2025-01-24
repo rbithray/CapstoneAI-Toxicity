@@ -1,8 +1,11 @@
 # 4. Research Question 2
 
+> [!WARNING]
+> Due to the nature of this section, the following contains toxic and possibly harmful language. For transparency and honesty purposes it has been decided not to censor these terms, but discuss them and the biases and negative connotation that leads to the generation of these texts. The group in no way aggrees with any of these statements. Viewer discretion is strongly advised.
+
 Whereas the previous chapter focused on generating the toxic outputs and comparing the toxicity scores of the models, this part dives deeper into the lexical features of the prompts and the outputs. We were able to do this using Captum, a library that can be used for model interpretability [9]. In this chapter, the following question will be answered:
 
-**What are lexical features of prompts that lead Mixtral 8x7B, Llama3, Gemma, and BLOOM to generate toxic outputs?**
+**What are lexical features of prompts that lead Mistral 7B, Llama3, Gemma, and BLOOM to generate toxic outputs?**
 
 ---
 
@@ -72,8 +75,4 @@ Prompts with insults or strong language often led the models to add even more vu
 
 ---
 
-### Conclusion
 
-The analysis shows that large language models tend to repeat and amplify harmful biases in their outputs. Whether it’s stereotypes about groups, violent scenarios, or objectifying women, the models are heavily influenced by the biases in their training data. They also tend to escalate aggressive or ambiguous prompts into even more toxic responses.
-
-Feature Ablation helped us understand which words and phrases drive these toxic patterns by isolating the most influential tokens. This work shows that improving training data and developing better safeguards is essential to make these models safer and less biased. The same problems showed up across all the models, highlighting the need for industry-wide improvements.
