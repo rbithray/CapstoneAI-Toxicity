@@ -14,7 +14,6 @@ LLMs fail and the underlying mechanisms driving these failures.
 - [Project Plan](docs/CapstoneAI_Project_Plan.pdf)
 - [Research Question 1](#research-question-1)
 - [Research Question 2](#research-question-2)
-
 - [Tools](#tools)
   * [Required Libraries](#required-libraries)
   * [APIs and Tokens](#apis-and-tokens)
@@ -25,7 +24,7 @@ LLMs fail and the underlying mechanisms driving these failures.
 
 ## Background
 
-Large Language Models (LLMs) are becoming increasingly sophisticated, producing outputs that are not only coherent but also impactful in shaping digital interactions. As these models grow in size and capability, their influence expands [[1]].
+Large Language Models (LLMs) are becoming increasingly sophisticated, producing outputs that are not only coherent but also impactful in shaping digital interactions. As these models grow in size and capability, their influence expands [[1]](#1-language-models-are-general-purpose-interfaces).
 
 Generative AI, while impressive, operates by predicting the next word in a sequence based on patterns learned from vast datasets. This results in no true understanding of meaning or context behind its outputs. Consequently, this lack of comprehension and judgment becomes problematic when LLMs generate toxic content, as they often fail to recognize appropriate or inappropriate responses on their own. This issue becomes even more concerning in scenarios where developers, users, or stakeholders disregard the ethical implications of these outputs or fail to take responsibility for mitigating harm.
 
@@ -37,7 +36,7 @@ Explainable AI (XAI) has long been a vital area of research, undergoing a renais
 
 
 
-## Research Questions
+## Research Questions 1
 
 This projects aims to answer the following research questions:
 
@@ -58,33 +57,85 @@ This projects aims to answer the following research questions:
 
 
 ### Dataset
-[Decoding Trust][2] is a project aimed at providing a thorough assessment of trustworthiness in Generative Pretrained Transformer (GPT) models. The project provides datasets to test models on a variety of aspects of trustworthiness, including toxicity. The prompts concerning toxicity are a subset of [RealToxicityPrompts][3]. The dataset consists of prompts, along with their toxicity score, calculated using [PerspectiveAPI][4], a widely used toxicity-scoring tool developed by Google Jigsaw. This data will be used in this project to analyse models, as well as to analyse the features in prompts that solicit toxic responses.
-
-## Usage
-
-After installation, you can start training the model or use a pre-trained model to make predictions.
-
-
-
-## Dataset
+Decoding Trust is a project aimed at providing a thorough assessment of trustworthiness in Generative Pretrained Transformer (GPT) models[[2]](#2-decodingtrust-a-comprehensive-assessment-of-trustworthiness-in-gpt-models). The project provides datasets to test models on a variety of aspects of trustworthiness, including toxicity. The prompts concerning toxicity are a subset of RealToxicityPrompts[[3]](#3-realtoxicityprompts-evaluating-neural-toxic-degeneration-in-language-models). The dataset consists of prompts, along with their toxicity score, calculated using PerspectiveAPI, a widely used toxicity-scoring tool developed by Google Jigsaw[[4]](#4-a-new-generation-of-perspective-api-efficient-multilingual-character-level-transformers). This data will be used in this project to analyse models, as well as to analyse the features in prompts that solicit toxic responses.
 
 
 
 
+
+---
 ## References
 
-```
-[1]: https://arxiv.org/abs/2206.06336 "Language Models are General-Purpose Interfaces"
-[2]: https://arxiv.org/abs/2306.11698 "DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT Models"
-[3]: https://arxiv.org/abs/2009.11462 "RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models"
-[4]: https://arxiv.org/abs/2202.11176 "A New Generation of Perspective API: Efficient Multilingual Character-level Transformers"
-[5]: https://arxiv.org/abs/2401.04088 "Mixtral of Experts"
-[6]: https://arxiv.org/abs/2407.21783 "The Llama 3 Herd of Models"
-[7]: https://arxiv.org/abs/2403.08295 "Gemma: Open Models Based on Gemini Research and Technology"
-[8]: https://arxiv.org/abs/2211.05100 "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model"
-[9]: https://arxiv.org/abs/2310.06825 "Mistral 7B"
-[10]: https://arxiv.org/abs/2009.07896 "Captum: A unified and generic model interpretability library for PyTorch"
-```
+### 1. Language Models are General-Purpose Interfaces
+- **Authors**: Yaru Hao, Haoyu Song, Li Dong, Shaohan Huang, Zewen Chi, Wenhui Wang, Shuming Ma, Furu Wei  
+- **Year**: 2022  
+- **arXiv ID**: [2206.06336](https://arxiv.org/abs/2206.06336)  
+- **Primary Class**: cs.CL  
+
+---
+
+### 2. DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT Models
+- **Authors**: Boxin Wang, Weixin Chen, Hengzhi Pei, Chulin Xie, Mintong Kang, Chenhui Zhang, Chejian Xu, Zidi Xiong, Ritik Dutta, Rylan Schaeffer, et al.  
+- **Year**: 2024  
+- **arXiv ID**: [2306.11698](https://arxiv.org/abs/2306.11698)  
+- **Primary Class**: cs.CL  
+
+---
+
+### 3. RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models
+- **Authors**: Samuel Gehman, Suchin Gururangan, Maarten Sap, Yejin Choi, Noah A. Smith  
+- **Year**: 2020  
+- **arXiv ID**: [2009.11462](https://arxiv.org/abs/2009.11462)  
+- **Primary Class**: cs.CL  
+
+---
+
+### 4. A New Generation of Perspective API: Efficient Multilingual Character-level Transformers
+- **Authors**: Alyssa Lees, Vinh Q. Tran, Yi Tay, Jeffrey Sorensen, Jai Gupta, Donald Metzler, Lucy Vasserman  
+- **Year**: 2022  
+- **arXiv ID**: [2202.11176](https://arxiv.org/abs/2202.11176)  
+- **Primary Class**: cs.CL  
+
+---
+
+### 5. Mixtral of Experts
+- **Authors**: Albert Q. Jiang, Alexandre Sablayrolles, Antoine Roux, Arthur Mensch, Blanche Savary, Chris Bamford, et al.  
+- **Year**: 2024  
+- **arXiv ID**: [2401.04088](https://arxiv.org/abs/2401.04088)  
+- **Primary Class**: cs.LG  
+
+---
+
+### 6. The Llama 3 Herd of Models
+- **Authors**: Aaron Grattafiori, Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey, Abhishek Kadian, Ahmad Al-Dahle, et al.  
+- **Year**: 2024  
+- **arXiv ID**: [2407.21783](https://arxiv.org/abs/2407.21783)  
+- **Primary Class**: cs.AI  
+
+---
+
+### 7. Gemma: Open Models Based on Gemini Research and Technology
+- **Authors**: Gemma Team, Thomas Mesnard, Cassidy Hardin, Robert Dadashi, Surya Bhupatiraju, Shreya Pathak, et al.  
+- **Year**: 2024  
+- **arXiv ID**: [2403.08295](https://arxiv.org/abs/2403.08295)  
+- **Primary Class**: cs.CL  
+
+---
+
+### 8. BLOOM: A 176B-Parameter Open-Access Multilingual Language Model
+- **Authors**: BigScience Workshop, Teven Le Scao, Angela Fan, Christopher Akiki, Ellie Pavlick, Suzana Ilić, et al.  
+- **Year**: 2023  
+- **arXiv ID**: [2211.05100](https://arxiv.org/abs/2211.05100)  
+- **Primary Class**: cs.CL  
+
+---
+
+### 9. Captum: A Unified and Generic Model Interpretability Library for PyTorch
+- **Authors**: Narine Kokhlikyan, Vivek Miglani, Miguel Martin, Edward Wang, Bilal Alsallakh, Jonathan Reynolds, Alexander Melnikov, Natalia Kliushkina, Carlos Araya, Siqi Yan, et al.  
+- **Year**: 2020  
+- **arXiv ID**: [2009.07896](https://arxiv.org/abs/2009.07896)
+
+---
 ## Contributions
 
 Contributing members
