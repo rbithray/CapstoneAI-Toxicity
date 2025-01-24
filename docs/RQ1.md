@@ -1,6 +1,6 @@
 # Research Question 1
 
-After preprocessing the data, the first step is to generate toxic outputs. We were able to use LLaMA3:text, Gemma2, and BLOOM3b. Instead of Mistral 7b, we used Mistral 7b because Mixtral was too large to run on our computers, and Mistral 7b is significantly smaller. The other models were quantized before running them. 
+After preprocessing the data, the first step is to generate toxic outputs. We were able to use LLaMA3:text, Gemma2, and BLOOM3b. Instead of Mistral 7b, we used Mistral 7b because Mixtral [7xb] was too large to run on our computers, and Mistral 7b is significantly smaller. The other models were quantized before running them. 
 
 In this chapter, the following question will be answered:
 
@@ -10,7 +10,7 @@ In this chapter, the following question will be answered:
 
 ### MUST: Compare Model Outputs and Score Toxicity
 
-To compare the model outputs, we created a graphical user interface (GUI) where you can select the model to create the response and add the prompts. For the prompts, we chose the 500 most toxic as an input. After selecting the model and prompts, you will get back a list of responses with the toxicity score from the Perspective API. 
+To compare the model outputs, we created a graphical user interface (GUI) where you can select the model to create the response and add the prompts. For the prompts, we chose the 500 most toxic as an input [determined using the Perspective API]. After selecting the model and prompts, ["we received" in stead of: you will get back] a list of responses with the toxicity score from the Perspective API. 
 
 After collecting all responses and their scores, we selected the 50 most toxic responses from each LLM and prompt, resulting in five JSON files containing the top 50 most toxic entries for each category. These files can be accessed [here](https://github.com/rbithray/CapstoneAI-Toxicity/tree/main/results/Top50)
 
