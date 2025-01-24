@@ -12,8 +12,9 @@ LLMs fail and the underlying mechanisms driving these failures.
 
 - [Background](#background)
 - [Project Plan](docs/CapstoneAI_Project_Plan.pdf)
-- [Research Question 1](#research-question-1)
-- [Research Question 2](#research-question-2)
+- [Research Questions](#research-questions)
+  - [Research Question 1](docs/RQ1.md)
+  - [Research Question 2](docs/RQ2.md)
 - [Tools](#tools)
   * [Required Libraries](#required-libraries)
   * [APIs and Tokens](#apis-and-tokens)
@@ -36,9 +37,7 @@ Explainable AI (XAI) has long been a vital area of research, undergoing a renais
 
 
 
-## Research Question 1
-
-## Research Question 2
+## Research Questions
 
 This projects aims to answer the following research questions:
 
