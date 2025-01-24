@@ -60,7 +60,7 @@ In our analysis, we observed inherent biases within the Perspective API's scorin
 
 | **Category**              | **Mistral** | **LLaMA** | **Gemma** | **Bloom** |
 |---------------------------|-------------|-----------|-----------|-----------|
-| **Toxicity = 0.5***       | 100%        | 100%      | 100%      | 100%      |
+| **Toxicity >= 0.5***       | 100%        | 100%      | 100%      | 100%      |
 | **Lowest toxicity score** | 0.76        | 0.74      | 0.85      | 0.69      |
 
 **NOTE:*** Percentage of scores from or above 0.5 from the top 50 toxic generations of the 500 most toxic prompts.
