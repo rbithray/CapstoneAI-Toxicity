@@ -15,10 +15,9 @@ LLMs fail and the underlying mechanisms driving these failures.
 - [Research Questions](#research-questions)
   - [Research Question 1](docs/RQ1.md)
   - [Research Question 2](docs/RQ2.md)
+- [Dataset](#dataset)
 - [Tools](#tools)
-  * [Required Libraries](#required-libraries)
-  * [APIs and Tokens](#apis-and-tokens)
-  * [Dataset](#dataset)
+- [Ethics](docs/ethics.md)
 - [References](#references)
 - [Contributions](#contributions)
 - [File structure](#file-structure)
@@ -33,7 +32,11 @@ Language, being highly context-dependent, makes the identification and mitigatio
 
 Although defining toxic output through benchmarking is crucial for identifying failures, it is not sufficient for understanding the underlying causes of toxicity. Benchmarks provide representative examples of toxic content, but do not inherently explain the mechanisms behind the generation of such outputs. To address this gap, we must go beyond the benchmarks and dive into explainability techniques.
 
-Explainable AI (XAI) has long been a vital area of research, undergoing a renaissance with works like LIME and SHAP, which provide algorithmic explanations. Despite advances in generative AI, XAI remains essential for understanding and mitigating the toxic output produced by LLM. This is particularly important because LLM outputs can often be inconsistent, overly confident, or prone to hallucinations. Given the societal impact of language toxicity, ensuring transparency in model decision making is crucial.
+Explainable AI (XAI) has long been a vital area of research, undergoing a renaissance with works like LIME and SHAP,
+which provide algorithmic explanations. Despite advances in generative AI, XAI remains essential for understanding and
+mitigating the toxic output produced by LLM. This is particularly important because LLM outputs can often be
+inconsistent, overly confident, or prone to hallucinations. Given the societal impact of language toxicity, ensuring
+transparency in model decision-making is crucial.
 
 
 
@@ -45,24 +48,22 @@ This projects aims to answer the following research questions:
 2. What are lexical features of prompts that lead Mistral, llama3, Gemma, and BLOOM to generate toxic outputs?
 3. Which syntactic structures of prompts lead the three selected LLMs to generate toxic outputs?
 
-For the 
+The approach and results for the research question can be found here: [RQ1](docs/RQ1.md), [RQ2](docs/RQ2.md). For RQ3,
+more information can be found in [Acknowledgements](docs/ack.md)
 
+## Dataset
+
+This project relies on data from
+RealToxicityPrompts [[3]](#3-realtoxicityprompts-evaluating-neural-toxic-degeneration-in-language-models). More
+information on what and how this data was used can be found in [data](data/data.md).
 
 ***
 ## Tools
 
+This project uses `python 3.12` for [RQ1](docs/RQ1.md), and `python 3.10` for [RQ2](docs/RQ2.md). More information on
+the specific libraries used are listed in [code](code/code.md).
 
-### Required Libraries
-
-
-### APIs and Tokens
-
-
-### Dataset
-Decoding Trust is a project aimed at providing a thorough assessment of trustworthiness in Generative Pretrained Transformer (GPT) models[[2]](#2-decodingtrust-a-comprehensive-assessment-of-trustworthiness-in-gpt-models). The project provides datasets to test models on a variety of aspects of trustworthiness, including toxicity. The prompts concerning toxicity are a subset of RealToxicityPrompts[[3]](#3-realtoxicityprompts-evaluating-neural-toxic-degeneration-in-language-models). The dataset consists of prompts, along with their toxicity score, calculated using PerspectiveAPI, a widely used toxicity-scoring tool developed by Google Jigsaw[[4]](#4-a-new-generation-of-perspective-api-efficient-multilingual-character-level-transformers). This data will be used in this project to analyse models, as well as to analyse the features in prompts that solicit toxic responses.
-
-
-
+## Ethics
 
 
 ---

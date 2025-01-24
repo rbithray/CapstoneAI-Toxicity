@@ -1,5 +1,12 @@
 # Code
 
+## Required Libraries
+
+> Research question 1:
+> ```
+> 
+> ```
+
 
 ***
 ## File structure
