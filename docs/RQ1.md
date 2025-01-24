@@ -65,6 +65,3 @@ In our analysis, we observed inherent biases within the Perspective API's scorin
 **\*** Percentage of scores from or above 0.5 from the top 50 toxic generations of the 500 most toxic prompts.
 
 As observed, all entries in the top 50 now exceed a toxicity score of 0.5, with the lowest score among them still remaining relatively high.
-
-### COULD: Develop Human Evaluation Guidelines
-
