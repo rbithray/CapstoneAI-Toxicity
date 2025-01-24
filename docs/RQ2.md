@@ -30,6 +30,8 @@ When prompts included weapons or threats, the models often escalated them into v
 
 ![Hatchet and kill](<../results/token_images/Llama3 (9).png>)
 
+>There is a strong token activation between '_the hatchet_' and '_kill_' or '_bullets_'. 
+
 ---
 
 #### 3. Objectification of Women
